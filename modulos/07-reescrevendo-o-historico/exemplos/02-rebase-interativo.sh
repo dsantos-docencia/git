@@ -31,7 +31,7 @@ git log --oneline
 
 passo "2. A lista que o editor mostraria (git rebase -i HEAD~4)"
 # GIT_SEQUENCE_EDITOR=cat apenas IMPRIME a lista; o rebase segue sem alterações.
-GIT_SEQUENCE_EDITOR=cat git rebase -q -i HEAD~4 | sed 's/^/   /' || true
+GIT_SEQUENCE_EDITOR='cat' git rebase -q -i HEAD~4 | sed 's/^/   /' || true
 
 passo "3. Editando a lista por script: wip → fixup · debug → drop · fet → reword"
 # GIT_SEQUENCE_EDITOR recebe o arquivo da lista; o sed troca as palavras no lugar.
