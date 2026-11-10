@@ -134,6 +134,6 @@ git clean -i          # modo interativo
 
 ---
 
-⬅️ [Módulo 02](../02-historico-e-diferencas/) · ➡️ Módulo 04 · Branches e merge *(em construção)*
+⬅️ [Módulo 02](../02-historico-e-diferencas/) · ➡️ [Módulo 04 · Branches e merge](../04-branches-e-merge/)
 
 <sub>© 2026 Prof. Daniel Santos · conteúdo [CC BY-NC-SA 4.0](../../LICENSE-CONTEUDO.md) · código [PolyForm Noncommercial](../../LICENSE)</sub>

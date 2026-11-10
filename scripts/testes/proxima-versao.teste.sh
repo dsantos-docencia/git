@@ -25,3 +25,7 @@ teste_cria_tag() {
     base; commitar b 1 "fix: y"; executar --tag
     git rev-parse -q --verify refs/tags/v1.2.4 >/dev/null || _falhar "a tag v1.2.4 deveria existir"
 }
+teste_feat_no_meio_do_historico() {
+    base; commitar b 1 "fix: a"; commitar c 1 "feat(pedidos): frete"; commitar d 1 "docs: readme"; executar
+    afirmar_igual "v1.3.0" "$SAIDA" "o feat não é o último commit, mas define a versão"
+}

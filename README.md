@@ -50,14 +50,16 @@ Cada módulo tem: **teoria** com cenário, diagramas e fontes oficiais (`README.
 | 01 | [Primeiro repositório](modulos/01-primeiro-repositorio/) | as três áreas, `add`/`commit` com intenção, mensagens, `.gitignore` | 4–5 | ✅ |
 | 02 | [Histórico e diferenças](modulos/02-historico-e-diferencas/) | `log` sob medida, seleção de revisão, `diff`, `blame`, pickaxe | 4–5 | ✅ |
 | 03 | [Desfazendo com segurança](modulos/03-desfazendo-com-seguranca/) | `restore`, `amend`, `reset` (3 modos), `revert`, `reflog`, `clean` | 4–5 | ✅ |
-| 04 | Branches e merge | `switch`, HEAD, fast-forward × merge de três vias, `--no-ff`, `--squash` | 4–5 | 🚧 |
-| 05 | Conflitos | anatomia do conflito, `zdiff3`, ferramentas, `rerere` | 3–4 | 🚧 |
-| 06 | Remotos e colaboração | `clone`, `fetch`/`pull`/`push`, upstream, HTTPS × SSH, credenciais, fork | 5–6 | 🚧 |
-| 07 | Reescrevendo o histórico | `rebase`, rebase interativo, `cherry-pick`, `--fixup`, regra de ouro | 4–5 | 🚧 |
-| 08 | Fluxos, tags e releases | GitHub flow, Git Flow, trunk-based, Conventional Commits, SemVer, tags | 4–5 | 🚧 |
-| 09 | Ferramentas avançadas | `stash`, `worktree`, `bisect`, submódulos, sparse checkout, Git LFS | 5–6 | 🚧 |
-| 10 | Por dentro do Git | objetos, refs, packfiles, encanamento, SHA-256 e reftable | 4–5 | 🚧 |
-| 11 | Segurança, hooks e automação | hooks, assinatura de commits, segredos, `.gitattributes`, Git no CI | 4–5 | 🚧 |
+| 04 | [Branches e merge](modulos/04-branches-e-merge/) | `switch`, HEAD, fast-forward × merge de três vias, `--no-ff`, `--squash` | 4–5 | ✅ |
+| 05 | [Conflitos](modulos/05-conflitos/) | anatomia do conflito, `zdiff3`, ferramentas, `rerere` | 3–4 | ✅ |
+| 06 | [Remotos e colaboração](modulos/06-remotos-e-colaboracao/) | `clone`, `fetch`/`pull`/`push`, upstream, HTTPS × SSH, credenciais, fork | 5–6 | ✅ |
+| 07 | [Reescrevendo o histórico](modulos/07-reescrevendo-o-historico/) | `rebase`, rebase interativo, `cherry-pick`, `--fixup`, regra de ouro | 4–5 | ✅ |
+| 08 | [Fluxos, tags e releases](modulos/08-fluxos-tags-e-releases/) | GitHub flow, Git Flow, trunk-based, Conventional Commits, SemVer, tags | 4–5 | ✅ |
+| 09 | [Ferramentas avançadas](modulos/09-ferramentas-avancadas/) | `stash`, `worktree`, `bisect`, submódulos, sparse checkout, Git LFS | 5–6 | ✅ |
+| 10 | [Por dentro do Git](modulos/10-por-dentro-do-git/) | objetos, refs, packfiles, encanamento, SHA-256 e reftable | 4–5 | ✅ |
+| 11 | [Segurança, hooks e automação](modulos/11-seguranca-hooks-e-automacao/) | hooks, assinatura de commits, segredos, `.gitattributes`, Git no CI | 4–5 | ✅ |
+
+🚀 **Projetos práticos**: [projetos/](projetos/) — relatório de contribuição, guardião de push (hook `pre-push`) e release de ponta a ponta, com testes.
 
 🧪 **Laboratório**: [laboratorio/](laboratorio/) — instalação passo a passo (Windows, macOS, Linux), container pronto e um **time simulado** (servidor + duas pessoas) para treinar remotos e conflitos sem internet.
 

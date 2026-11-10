@@ -26,8 +26,8 @@ intervalo="HEAD"; [[ "$ultima" != "v0.0.0" ]] && intervalo="$ultima..HEAD"
 nivel=0     # 0 nada · 1 patch · 2 minor · 3 major
 # %s = assunto, %b = corpo; separador de registro \x1e para tratar corpos com várias linhas
 while IFS= read -r -d $'\x1e' registro; do
+    registro="${registro#$'\n'}"          # o git log separa os registros com uma quebra de linha
     assunto="${registro%%$'\n'*}"
-    assunto="${assunto#$'\n'}"
     if [[ "$assunto" =~ ^[a-z]+(\(.+\))?!: ]] || [[ "$registro" == *"BREAKING CHANGE"* ]]; then
         nivel=3
     elif [[ "$assunto" =~ ^feat(\(.+\))?: ]]; then
